@@ -1,0 +1,39 @@
+.onedim__form {
+  background-color: blue;
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 3px solid white;
+  font-weight: 700;
+}
+.onedim__form-column {
+  display: flex;
+  justify-content: space-between;
+}
+
+.result__btn {
+  font-size: 25px;
+  background-color: red;
+  padding: 10px;
+  color: white;
+  font-weight: 700;
+  border-radius: 10px;
+  border: 3px solid white;
+}
+.table__title {
+  font-size: 25px;
+  margin-top: 10px;
+}
+.table {
+  font-size: 25px;
+}
+.result__title {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.result__text {
+  font-size: 25px;
+  color: red;
+  font-weight: 700;
+}

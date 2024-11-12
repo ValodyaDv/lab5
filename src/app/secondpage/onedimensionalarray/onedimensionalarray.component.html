@@ -1,0 +1,22 @@
+<section class="onedim">
+  <div class="task">
+    <h1 class="task__title">Завдання №1</h1>
+    <p class="task__text">
+      З 8 до 20 годин температура повітря вимірювалася щогодини. Відомо, що
+      протягом цього часу температура знижувалася. Визначте, о котрій годині
+      була вперше зафіксовано від`ємну температуру.
+    </p>
+  </div>
+  <div>
+    <h2 class="array__title">Температури по годинах (з 8 до 20)</h2>
+    <ul class="array__output">
+      <li *ngFor="let temp of temperatures; let i = index">
+        {{ 8 + i }}:00 : ({{ temp }}°C)
+      </li>
+    </ul>
+
+    <p class="array__result" *ngIf="firstNegativeTemperature !== null">
+      Перша від'ємна температура: {{ firstNegativeTemperature }}°C
+    </p>
+  </div>
+</section>

@@ -1,0 +1,21 @@
+.array__title {
+  font-size: 30px;
+  color: blue;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.array__output {
+  color: green;
+  font-weight: 700;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-size: 25px;
+  row-gap: 10px;
+  margin-bottom: 10px;
+}
+.array__result {
+  color: red;
+  font-weight: 700;
+  font-size: 25px;
+}

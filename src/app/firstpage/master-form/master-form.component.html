@@ -1,0 +1,55 @@
+<article class="master">
+  <form class="master__form" (ngSubmit)="onSubmit()">
+    <h2 class="master__head">Форма</h2>
+    <div class="master__name">
+      <label>Ім'я магістра: </label>
+      <input
+        type="text"
+        id="name2"
+        [(ngModel)]="masterName"
+        name="masterName"
+        required
+      />
+    </div>
+    <div class="master__avarage">
+      <label>Середній бал: </label>
+      <input
+        type="number"
+        id="avarage2"
+        [(ngModel)]="masterAverage"
+        name="masterAverage"
+        min="1"
+        max="5"
+        required
+      />
+    </div>
+    <div class="master__specialty">
+      <label>Спеціальність: </label>
+      <input
+        type="text"
+        id="specialty"
+        [(ngModel)]="masterSpecialization"
+        name="masterSpecialization"
+        required
+      />
+    </div>
+    <div class="master__additionalsum">
+      <label>Додаткова сума до стипендії </label>
+      <input
+        type="number"
+        id="addsum"
+        [(ngModel)]="masterAddsum"
+        name="masterAddsum"
+        min="1"
+        required
+      />
+    </div>
+    <button class="btn" type="submit">Підтвердити</button>
+  </form>
+  <section class="result-2" *ngIf="scholarship !== null">
+    <h2 class="result-head">Результат</h2>
+    <p class="result2-text-1">Магістр: {{ masterName }}</p>
+    <p class="result2-text-2">Спеціальність: {{ masterSpecialization }}</p>
+    <p class="result2-text-3">Стипендія: {{ scholarship }}</p>
+  </section>
+</article>
